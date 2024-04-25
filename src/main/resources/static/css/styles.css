@@ -1,0 +1,60 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    height: 100%; /* Asegura que el body y html ocupan toda la altura */
+}
+
+header {
+    background-image: url('../image/fotodefondo.png'); /* Verifica la ruta */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Altura del header igual a la altura de la ventana */
+    color: white;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    padding: 0 20px; /* Añade padding horizontal para evitar que el contenido toque los bordes */
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center; /* Comienza los enlaces en la parte izquierda */
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Elimina cualquier margen por defecto */
+}
+
+.nav-links a {
+    padding: 10px 20px; /* Ajusta el padding para cambiar el tamaño del espacio dentro del enlace */
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700; /* Cambio a un color más claro al pasar el ratón */
+}
+
+.login-link {
+    margin-left: auto; /* Alinea automáticamente a la derecha */
+    display: flex; /* Asegura que el enlace de login sea flexible */
+    align-items: horizontal; /* Centra verticalmente el enlace de login */
+}
+
+.login-link a {
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    text-decoration: none;
+    padding: 10px 20px; /* Consistencia en el padding */
+    font-size: 18px; /* Consistencia en el tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.login-link a:hover {
+    background-color: #f2f2f2; /* Color de fondo más oscuro al pasar el ratón */
+    color: #000; /* Mantener el texto en negro */
+}

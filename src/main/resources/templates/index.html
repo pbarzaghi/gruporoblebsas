@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nombre de la Empresa</title>
+    <link href="../css/styles.css" rel="stylesheet">
+</head>
+<body>
+<header>
+
+    <nav>
+        <table>
+            <tr>
+                <th>
+                    <div class="nav-links">
+                        <a th:href="@{/viewEmpresas}">Empresas</a>
+                        <a th:href="@{/viewSocios}">Socios</a>
+                        <a th:href="@{/viewQuienessomos}">Quiénes Somos</a>
+                    </div>
+                </th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th align="rigth">
+                    <div class="login-link" >
+                        <a th:href="@{/}">Login</a>
+                    </div>
+                </th>
+
+            </tr>
+        </table>
+
+
+    </nav>
+
+
+</header>
+
+</body>
+</html>
