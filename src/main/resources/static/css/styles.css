@@ -9,7 +9,7 @@ header {
     background-image: url('../image/fotodefondo.png'); /* Verifica la ruta */
     background-size: cover;
     background-position: center;
-    height: 100vh; /* Altura del header igual a la altura de la ventana */
+    height: 120vh; /* Altura del header igual a la altura de la ventana */
     color: white;
     display: flex;
     align-items: left;

@@ -10,4 +10,14 @@ public class IndexController {
     public String index(Model model) {
         return "index";
     }
+
+    @GetMapping("/viewQuienesSomos")
+    public String viewQuienessomos(Model model){
+            return "view-quienessomos";
+    }
+
+    @GetMapping("/login")
+    public String login(Model model) {
+        return "login";
+    }
 }

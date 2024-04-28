@@ -1,7 +1,5 @@
-package com.gruporoble.condiciones.entity;
+package com.gruporoble.condiciones.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,17 +9,14 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-
-public class Socios {
+public class SocioDto {
     private Long id;
     private String localidad;
-    private String nombreContacto;
+
     private String nombreFantasia;
-    private String cuit;
+
     private String telContacto;
-    private String direccion;
     private String email;
-
-
+    private String cuit;
 
 }

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Formulario de Acceso</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Videojuegos & Desarrollo">
+    <meta name="description" content="Muestra de un formulario de acceso en HTML y CSS">
+    <meta name="keywords" content="Formulario Acceso, Formulario de LogIn">
+    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+    <style type="text/css">
+        #errorMensaje {
+            display: none; /* Por defecto, ocultamos el mensaje de error */
+            color: red; /* Color del texto de error */
+        }
+    </style>
+    <script type="text/javascript">
+        // Función para validar las credenciales ingresadas por el usuario
+        function validarCredenciales() {
+            var usuario = document.getElementById("usuario").value;
+            var password = document.getElementById("password").value;
+            var mensajeError = document.getElementById("errorMensaje");
+
+            // Validación simple, puedes ajustarla según tus necesidades
+            if (usuario === "usuario_correcto" && password === "contraseña_correcta") {
+                mensajeError.style.display = "none"; // Oculta el mensaje de error si estaba visible anteriormente
+                return true; // Credenciales válidas, se enviará el formulario
+            } else {
+                mensajeError.style.display = "block"; // Mostrar el mensaje de error
+                return false; // Evitar el envío del formulario
+            }
+        }
+    </script>
+</head>
+<body>
+<div id="contenedor">
+    <div id="central">
+        <div id="login">
+            <div class="titulo">
+                Bienvenido
+            </div>
+            <form id="loginform" onsubmit="return validarCredenciales()">
+                <input type="text" id="usuario" name="usuario" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" name="password" required>
+                <button type="submit" title="Ingresar" name="Ingresar">Login</button>
+            </form>
+            <div id="errorMensaje">Usuario o contraseña incorrectos</div> <!-- Mensaje de error oculto por defecto -->
+        </div>
+        <div class="inferior">
+            <a th:href="@{/}">Volver</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

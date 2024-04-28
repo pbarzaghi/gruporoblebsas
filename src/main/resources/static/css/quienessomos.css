@@ -1,0 +1,43 @@
+/* Estilos para el contenedor del contenido */
+        .content-container {
+            max-width: 800px; /* Ancho máximo del contenido */
+            margin: 0 auto; /* Centrar horizontalmente */
+            padding: 20px; /* Espacio alrededor del contenido */
+            background-color: rgba(255, 255, 255, 0.8); /* Color de fondo con transparencia */
+            border-radius: 10px; /* Bordes redondeados */
+        }
+
+        /* Estilos para el encabezado */
+        header {
+            background-image: url('../image/fotodefondo2.png');
+            background-size: cover;
+            background-position: center;
+            height: 120%; /* Altura del header igual a la altura de la ventana */
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 px;
+            margin: 0; /* Eliminar márgenes */
+        }
+     .login-link {
+    margin-left: auto; /* Alinea automáticamente a la derecha */
+    display: flex; /* Asegura que el enlace de login sea flexible */
+    align-items: horizontal; /* Centra verticalmente el enlace de login */
+}
+ .login-link a {
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    text-decoration: none;
+    padding: 10px 20px; /* Consistencia en el padding */
+    font-size: 18px; /* Consistencia en el tamaño de fuente */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+ .login-link a:hover {
+    background-color: #f2f2f2; /* Color de fondo más oscuro al pasar el ratón */
+    color: #000; /* Mantener el texto en negro */
+}
