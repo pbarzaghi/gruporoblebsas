@@ -5,33 +5,42 @@ body, html {
     height: 100%; /* Asegura que el body y html ocupan toda la altura */
 }
 
+
+
 header {
-    background-image: url('../image/fotodefondo.png'); /* Verifica la ruta */
-    background-size: cover;
-    background-position: center;
-    height: 120vh; /* Altura del header igual a la altura de la ventana */
+    background-image: url('../image/fotodefondo2.jpg');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir completamente el contenedor */
+    background-position: left;
+    height: 50vh; /* Altura del header ajustada */
     color: white;
     display: flex;
-    align-items: left;
-    justify-content: center;
-    padding: 0 20px; /* Añade padding horizontal para evitar que el contenido toque los bordes */
+    align-items:  left; /* Centra verticalmente el contenido */
+    justify-content: left; /* Centra horizontalmente el contenido */
+    padding: 0 20px;
 }
 
+.logo-img {
+    max-width: 50%; /* Ajusta el ancho máximo de la imagen al tamaño del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
 .nav-links {
     display: flex;
     justify-content: center; /* Comienza los enlaces en la parte izquierda */
     list-style: none;
     padding: 0;
-    margin: 0; /* Elimina cualquier margen por defecto */
-}
+    margin: 0;
 
+}
 .nav-links a {
-    padding: 10px 20px; /* Ajusta el padding para cambiar el tamaño del espacio dentro del enlace */
+    padding: 10px 20px;
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px; /* Reducir el tamaño de fuente */
     transition: color 0.3s;
+
 }
+
+
 
 .nav-links a:hover {
     color: #FFD700; /* Cambio a un color más claro al pasar el ratón */
@@ -48,8 +57,8 @@ header {
     color: black; /* Texto negro */
     text-decoration: none;
     padding: 10px 20px; /* Consistencia en el padding */
-    font-size: 18px; /* Consistencia en el tamaño de fuente */
-    border-radius: 5px; /* Bordes redondeados */
+    font-size: 16px; /* Consistencia en el tamaño de fuente */
+    border-radius: 2px; /* Bordes redondeados */
     transition: background-color 0.3s, color 0.3s;
 
 }

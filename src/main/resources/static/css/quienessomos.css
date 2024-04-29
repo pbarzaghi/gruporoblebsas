@@ -9,7 +9,7 @@
 
         /* Estilos para el encabezado */
         header {
-            background-image: url('../image/fotodefondo2.png');
+            background-image: url('../image/fotodefondo2.jpg');
             background-size: cover;
             background-position: center;
             height: 120%; /* Altura del header igual a la altura de la ventana */

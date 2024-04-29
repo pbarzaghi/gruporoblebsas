@@ -29,7 +29,7 @@ public  class Dummy {
 
         SocioDto socioBalcarce=SocioDto.builder()
                 .id(Long.getLong("3"))
-                .nombreFantasia("Muelbal S.A")
+                .nombreFantasia("La muebleria")
                 .email("lamuebleriabalcarce@outlook.com.ar")
                 .telContacto("2266-481963")
                 .localidad("Balcarce")
