@@ -12,7 +12,7 @@
             background-image: url('../image/fotodefondo2.jpg');
             background-size: cover;
             background-position: center;
-            height: 120%; /* Altura del header igual a la altura de la ventana */
+            height: 50%; /* Altura del header igual a la altura de la ventana */
             color: black;
             display: flex;
             align-items: center;
