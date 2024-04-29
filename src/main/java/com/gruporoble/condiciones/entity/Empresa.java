@@ -15,10 +15,10 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="empresa")
+ @Table(name="empresa")
 public class Empresa {
-    @Id
-    @GeneratedValue(strategy= GenerationType.IDENTITY)
+   @Id
+   @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
 
 

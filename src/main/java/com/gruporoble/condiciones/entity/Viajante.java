@@ -6,17 +6,16 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.List;
 @Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name="viajante")
+ @Entity
+ @Table(name="viajante")
 public class Viajante {
-    @Id
+     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
-    @Column(name="id")
+
     private Long id;
 
     private String nombreCompleto;

@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class EmpresaDto {
     private Long id;
-     private String nombre;
+    private String nombre;
     private String cuit;
     private String tel;
 }

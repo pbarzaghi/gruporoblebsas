@@ -10,20 +10,20 @@ import lombok.NoArgsConstructor;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name="socio")
+ @Entity
+ @Table(name="socio")
 
 public class Socio {
-    @Id
+   @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Long id;
     private String localidad;
-  //  private String nombreContacto;
+     private String nombreContacto;
     private String nombreFantasia;
     private String cuit;
     private String telContacto;
-  //  private String direccion;
-  //  private String email;
+     private String direccion;
+    private String email;
 
 
 
