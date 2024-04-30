@@ -119,9 +119,15 @@ public  class Dummy {
 
     public static List<EmpresaDto> findAllEmpresa(){
         List<EmpresaDto> empresas= new ArrayList<>();
+        EmpresaDto empresaDto10=EmpresaDto.builder()
+                .id(Long.getLong("10"))
+                .nombre("Deseo Confort de Grupo Color ")
+                .cuit("30-59303662-2")
+                .tel("03573-4240000")
+                .build();
         EmpresaDto empresaDto1=EmpresaDto.builder()
                 .id(Long.getLong("1"))
-                .nombre("Color Living SA")
+                .nombre("Color Living de Grupo Color")
                 .cuit("30-59303662-2")
                 .tel("03573-4240000")
                 .build();
@@ -176,6 +182,7 @@ public  class Dummy {
 
 
         empresas.add(empresaDto1);
+        empresas.add(empresaDto10);
         empresas.add(empresaDto2);
         empresas.add(empresaDto3);
         empresas.add(empresaDto4);
